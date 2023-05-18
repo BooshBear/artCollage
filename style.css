@@ -13,9 +13,14 @@ main {
     display: flex;
 }
 
+.container div {
+    transition: all 1s;
+}
+
 .container div:hover {
     margin-left: 3rem;
     margin-right: 3rem;
+    transition: margin 1s;
 }
 
 .container .second {
