@@ -11,9 +11,24 @@ main {
 /* Img Containers */
 .container {
     display: flex;
-    top: 0;
-    left: 0;
+    height: 10%;
+}
 
-    height: 30%;
-    width: 80%;
+.container .second {
+    transform: translate(-50%);
+}
+
+.container .third {
+    transform: translate(-100%);
+}
+
+img {
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+
+img:hover {
+    z-index: 1;
+    transform: scale(1.2);
 }
