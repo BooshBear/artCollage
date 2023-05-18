@@ -18,38 +18,26 @@ main {
 /* Img Containers */
 .container {
     display: flex;
-    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 50%;
     width: 100%;
 }
 
 .first, .second, .third, .fourth {
     height: 100%;
-    width: 35%;
+    width: 25%;
     transition: width 1s;
 }
-
-.first:hover, .second:hover, .third:hover, .fourth:hover {
-    width: 40%;
+img {
+    position: absolute;
+    height: 900px;
+    width: auto;
 }
 
-/* the imgs */
-.first-box, .second-box, .third-box, .fourth-box {
-    height: 100%;
+img:hover {
+    z-index: 1;
+    transform: scale(1.2);
 }
-
-.first-box:hover, .second-box:hover, .third-box:hover, .fourth-box:hover {
-    filter: blur(0px);
-}
-
-.first-box {
-    background-color: aqua;
-}
-
-.second-box {
-    background-color: red;
-}
-
-.third-box {
-    background-color: green;
-}
-
