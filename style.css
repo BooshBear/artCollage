@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vw;
+}
+
+.line {
+    z-index: 1;
+    height: 100%;
+    width: 10px;
+    background-color: black;
+}
+
+/* Img Containers */
+.container {
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+
+.first, .second, .third, .fourth {
+    height: 100%;
+    width: 35%;
+    transition: width 1s;
+}
+
+.first:hover, .second:hover, .third:hover, .fourth:hover {
+    width: 40%;
+}
+
+/* the imgs */
+.first-box, .second-box, .third-box, .fourth-box {
+    height: 100%;
+}
+
+.first-box:hover, .second-box:hover, .third-box:hover, .fourth-box:hover {
+    filter: blur(0px);
+}
+
+.first-box {
+    background-color: aqua;
+}
+
+.second-box {
+    background-color: red;
+}
+
+.third-box {
+    background-color: green;
+}
+
