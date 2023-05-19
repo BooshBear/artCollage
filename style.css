@@ -3,21 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
   display: flex;
+  justify-self: center;
   width: 100rem;
-  background-color: rgb(187, 97, 187);
+  background-color: white;
+  transition: margin 2s ease;
 }
 
 .container div:hover {
     margin-left: 2rem;
     margin-right: 2rem;
-    transition: margin 2s ease;
 }
 
 .container:hover div {
     filter: grayscale(100%);
+    transition: filter 1.2s ease;
 }
   
 .container div:hover {
