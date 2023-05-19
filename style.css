@@ -6,27 +6,38 @@
 
 .container {
   display: flex;
+  margin: 0;
 }
 
 .container div:hover {
-    margin-left: 6rem;
-    margin-right: 6rem;
-    transition: margin .5s ease;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    transition: margin 2s ease;
+    
+}
+
+.container:hover div {
+    filter: grayscale(100%);
+}
+  
+.container div:hover {
+    filter: grayscale(0%);
 }
 
 .container .second {
-    transform: translate(-50%);
+    width: 100%;
+    transform: translate(-40%);
 }
 
 
 .container .third {
-    transform: translate(-100%);
+    transform: translate(-80%);
 }
 
 
 img {
-    height: auto;
-    width: 100%;
+    width: 700px;
+    display: none;
 
     -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
@@ -36,9 +47,8 @@ img {
     mask-position: 0;
 }
 
-img:hover {
-    transform: scale(1.2);
-    filter: grayscale(100%) contrast(120%);
+.first:hover img, .second:hover img, .third:hover img{
+    transform: scale(1.05);
     transition: all .5s ease;
     -webkit-mask-position: 120%;
     mask-position: 120%;
